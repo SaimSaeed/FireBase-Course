@@ -1,0 +1,35 @@
+[debug] [2023-08-11T17:21:36.933Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T17:21:36.943Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Waseem Computers\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-11T17:21:36.945Z] CLI Version:   12.4.7
+[debug] [2023-08-11T17:21:36.947Z] Platform:      win32
+[debug] [2023-08-11T17:21:36.948Z] Node Version:  v16.15.1
+[debug] [2023-08-11T17:21:36.951Z] Time:          Fri Aug 11 2023 22:21:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-08-11T17:21:36.952Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-11T17:21:37.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T17:21:37.374Z] > authorizing via signed-in user (saimsaeed640@gmail.com)
+[debug] [2023-08-11T17:21:37.375Z] [iam] checking project fir-course-2bc35 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-11T17:21:37.391Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-course-2bc35:testIamPermissions [none]
+[debug] [2023-08-11T17:21:37.392Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-course-2bc35:testIamPermissions x-goog-quota-user=projects/fir-course-2bc35
+[debug] [2023-08-11T17:21:37.393Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-course-2bc35:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-11T17:21:39.473Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-course-2bc35:testIamPermissions 200
+[debug] [2023-08-11T17:21:39.474Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-course-2bc35:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-11T17:21:39.480Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-course-2bc35 [none]
+[debug] [2023-08-11T17:21:40.058Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-course-2bc35 200
+[debug] [2023-08-11T17:21:40.059Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-course-2bc35 {"projectId":"fir-course-2bc35","projectNumber":"816725659696","displayName":"Firebase-Course","name":"projects/fir-course-2bc35","resources":{"hostingSite":"fir-course-2bc35","storageBucket":"fir-course-2bc35.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_dc802830-e692-459d-88a8-20679964965f"}
+[info] 
+[info] === Deploying to 'fir-course-2bc35'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-08-11T17:21:40.100Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-course-2bc35/versions [none]
+[debug] [2023-08-11T17:21:40.101Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-course-2bc35/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-08-11T17:21:42.264Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-course-2bc35/versions 200
+[debug] [2023-08-11T17:21:42.265Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-course-2bc35/versions {"name":"projects/816725659696/sites/fir-course-2bc35/versions/927f66fa86827f52","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[fir-course-2bc35]: beginning deploy... 
+[info] i  hosting[fir-course-2bc35]: found 15 files in build 
+[debug] [2023-08-11T17:21:42.375Z] [hosting] uploading with 200 concurrency
+[debug] [2023-08-11T17:21:42.384Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2023-08-11T17:21:44.761Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2023-08-11T17:21:44.765Z] [hosting][hash queue][FINAL] {"max":2328,"min":90,"avg":284.2,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":2375}
+[debug] [2023-08-11T17:21:44.767Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/816725659696/sites/fir-course-2bc35/versions/927f66fa86827f52:populateFiles [none]
+[debug] [2023-08-11T17:21:44.768Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/816725659696/sites/fir-course-2bc35/versions/927f66fa86827f52:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/index.html":"ba5e0ed18a4d3a7cbbc7efa14d75dd616e4b8d0fb452900b317a1422349a325b","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.abd64e84.css":"64248ea4ff224e86d6fdddeadae71688049c45bceafb971315fac2f25d27c1da","/static/css/main.abd64e84.css.map":"cb90a01806b53ec9f7be5ad71b8ebab21c09aa0d2ff6c6bf698962e46baa8d4e","/static/js/787.3c880708.chunk.js":"b0ebaa37d30b84603b837e4e1eddb090027b6adf3c5f4f3332af017e028d4c00","/static/js/787.3c880708.chunk.js.map":"5e0d03c2a8fb3dad422e886f574403546d4cf01499b44e3bad1fe5da250b2af3","/static/js/main.4a305359.js.LICENSE.txt":"2c84780a2f09943befd60bb075cd655ee32d412bcc704e2b7688922ecd5a76f1","/404.html":"daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa","/asset-manifest.json":"dae2e994b6e3bf28d8bae8d182a990679f0d99d5f31f8435399e04f996156722","/static/js/main.4a305359.js":"37540a2305f5572771a3deb260635cb917f9613b99b50d0eedc63213695b2833","/static/js/main.4a305359.js.map":"9485a617730506cc6f16a6ae60e75bd8abe13a787cc88a7a001d47f5992dbfbf"}}
